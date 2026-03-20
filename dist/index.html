@@ -369,7 +369,8 @@
     </div>
 
     <div class="contact__form">
-      <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+      <form id="contactForm" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <div class="form-group">
           <label for="contact-name">Name</label>
           <input type="text" id="contact-name" name="name" placeholder="Your name" required>
