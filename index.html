@@ -369,30 +369,15 @@
     </div>
 
     <div class="contact__form">
-      <form id="contactForm" name="contact" method="POST" data-netlify="true" action="/">
-        <input type="hidden" name="form-name" value="contact" />
+      <!-- Formspree will send submissions to your email automatically -->
+      <form action="https://formspree.io/f/xvggpzoq" method="POST">
         <div class="form-group">
           <label for="contact-name">Name</label>
           <input type="text" id="contact-name" name="name" placeholder="Your name" required>
         </div>
         <div class="form-group">
           <label for="contact-email">Email</label>
-          <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
-        </div>
-        <div class="form-group">
-          <label for="contact-company">Company</label>
-          <input type="text" id="contact-company" name="company" placeholder="Company name (optional)">
-        </div>
-        <div class="form-group">
-          <label for="contact-budget">Budget Range</label>
-          <select id="contact-budget" name="budget">
-            <option value="">Select budget range</option>
-            <option value="under-1k">Under $1,000</option>
-            <option value="1k-5k">$1,000 – $5,000</option>
-            <option value="5k-10k">$5,000 – $10,000</option>
-            <option value="10k-plus">$10,000+</option>
-            <option value="discuss">Let's discuss</option>
-          </select>
+          <input type="email" id="contact-email" name="_replyto" placeholder="your@email.com" required>
         </div>
         <div class="form-group">
           <label for="contact-message">Message</label>
